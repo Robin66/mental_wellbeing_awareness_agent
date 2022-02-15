@@ -4,88 +4,100 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hallo
+    - hoi
+    - goeiemorgen
+    - goeiemiddag
+    - goedemorgen
+    - goedemiddag
+    - hoe gaat ie?
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - doei
+    - doei doei
+    - dag
+    - tot later
+    - tot ziens
+    - doeg
+    - tot morgen
+    - tot de volgende keer
+    - bedankt
+    - spreek je later
+    - zie je later
+    - fijne dag nog
+    - tot ziens Robyn
+    - dag Robyn
 
 - intent: affirm
   examples: |
     - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
+    - ja
+    - jazeker
+    - inderdaad
+    - natuurlijk
+    - klopt
+    - klinkt goed
+    - dat klinkt goed
+    - ik denk het wel
+    - dat is goed
     - correct
+    - mee eens
 
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nee
+    - nope
+    - niet
+    - niet echt
+    - ik denk het niet
+    - echt niet
+    - helemaal niet
+    - zeker niet
+    - dat klopt niet
+    - nooit
+    - daar ben ik het niet mee eens
 
 - intent: mood_great
   examples: |
     - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - goed
+    - geweldig
+    - ik voel me goed
+    - ik voel me geweldig
+    - erg goed
+    - super goed
+    - heel goed
+    - bijna perfect
+    - heel goed
+    - het gaat goed
+    - het gaat best goed
+    - heel erg goed
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
+    - ik voel me slecht
+    - slecht
+    - heel slecht
+    - super slecht
+    - niet goed
+    - niet geweldig
+    - niet zo goed
+    - teneergeslagen
     - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - ik voel me niet zo goed
+    - teleurgesteld
+    - zielig
+    - het gaat niet zo goed
+    - het gaat slecht
+    - ik voel me kut
+    - ik voel me rot
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - ben je een bot?
+    - ben je een robot?
+    - ben jij een mens?
+    - praat ik met een robot?
+    - praat ik met een mens?
