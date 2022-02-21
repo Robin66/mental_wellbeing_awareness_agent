@@ -1,33 +1,76 @@
 version: "3.0"
 
 intents:
+  # general conversation
   - greet
   - goodbye
   - affirm
   - deny
+  - give_name
+  # feature discussion
   - mood_great
   - mood_unhappy
+  # questions
   - bot_challenge
+  - ask_data
+  - ask_name
+
+entities:
+  - PERSON
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        intent: give_name
+        entity: PERSON
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hallo!"
+  - text: "Hoi, ik ben Robyn."
+
+  utter_ask_mood:
+  - text: "Hoe voel je je vandaag?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Misschien word je hier blij van:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Hielp dat?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Mooi, ga zo door!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Doei"
+  - text: "Tot de volgende keer"
+  - text: "Leuk je te spreken, {name}, tot de volgende keer!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Ik ben een bot, rescheven in Rasa."
+
+  utter_ask_name:
+  - text: "Hoe mag ik je noemen?"
+  - text: "Hoe zal ik je noemen?"
+
+  utter_data_answer:
+  - text: "Alles wat je mij vertelt sla ik tijdelijk op voor mezelf. Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien."
+
+  utter_name:
+  - text: "Ik heet Robyn."
+
+  utter_welcome:
+  - text: "Hallo {name}"
+  - text: "Leuk om je te ontmoeten, {name}"
+
+forms:
+  user_info_form:
+    required_slots:
+      - name
 
 session_config:
   session_expiration_time: 60

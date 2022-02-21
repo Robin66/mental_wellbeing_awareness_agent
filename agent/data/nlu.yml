@@ -59,6 +59,25 @@ nlu:
     - nooit
     - daar ben ik het niet mee eens
 
+- intent: give_name
+  examples: |
+    - ik heet Ben
+    - mijn naam is Janne
+    - noem mij Thijs
+    - noem mij maar Anne
+    - Patricia
+    - Roel heet ik
+    - je mag me Julius noemen
+    - doe maar Henk
+    - Berend
+    - Bart
+    - Kim
+    - Merel
+    - Rosanne
+    - Stefan
+    - Joris
+    - mijn naam is Sebastiaan
+
 - intent: mood_great
   examples: |
     - perfect
@@ -101,3 +120,22 @@ nlu:
     - ben jij een mens?
     - praat ik met een robot?
     - praat ik met een mens?
+
+- intent: ask_data
+  examples: |
+    - wat gebeurt er met mijn gegevens?
+    - sla je dit op?
+    - stuur je dit naar iemand door?
+    - wat doe je met mijn data?
+    - wat gebeurt er dan met alle berichtjes die ik je stuur?
+    - en wat gebeurt er met deze chat?
+    - waar gaan mijn berichten heen?
+
+- intent: ask_name
+  examples: |
+    - hoe heet je?
+    - hoe zal ik jou noemen?
+    - wat is jouw naam?
+    - hoe heet je ook alweer?
+    - vertel je naam nog eens
+    - zeg je naam nog eens
