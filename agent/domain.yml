@@ -29,8 +29,7 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Hallo!"
-  - text: "Hoi, ik ben Robyn."
+  - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
 
   utter_ask_mood:
   - text: "Hoe voel je je vandaag?"
@@ -58,14 +57,17 @@ responses:
   - text: "Hoe zal ik je noemen?"
 
   utter_data_answer:
-  - text: "Alles wat je mij vertelt sla ik tijdelijk op voor mezelf. Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien."
+  - text: >
+      Alles wat je mij vertelt sla ik tijdelijk op voor mezelf.
+      Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien.
 
   utter_name:
   - text: "Ik heet Robyn."
 
   utter_welcome:
-  - text: "Hallo {name}"
-  - text: "Leuk om je te ontmoeten, {name}"
+  - text: >
+      Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
+      stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
 
 forms:
   user_info_form:
