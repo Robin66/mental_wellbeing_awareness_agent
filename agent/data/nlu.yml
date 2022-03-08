@@ -77,41 +77,103 @@ nlu:
     - Stefan
     - Joris
     - mijn naam is Sebastiaan
+    - mijn vrienden noemen me Vincent
 
-- intent: mood_great
+- intent: refer_to_self
   examples: |
-    - perfect
-    - goed
-    - geweldig
-    - ik voel me goed
-    - ik voel me geweldig
-    - erg goed
-    - super goed
-    - heel goed
-    - bijna perfect
-    - heel goed
-    - het gaat goed
-    - het gaat best goed
-    - heel erg goed
+    - uit mezelf
+    - ik heb zelf contact opgenomen
+    - ikzelf
+    - ik
+    - van mij
+    - ik heb dat bedacht
+    - ik heb dat gedaan
+    - dat is mijn idee
+    - ik dacht dat dat wel een goed idee was
+    - ik wilde graag een checkup doen
+    - ik wil graag met je praten
+    - ik wil zelf met je praten
+    - ik wil dit zelf
 
-- intent: mood_unhappy
+- intent: refer_to_other
   examples: |
-    - ik voel me slecht
-    - slecht
-    - heel slecht
-    - super slecht
-    - niet goed
-    - niet geweldig
-    - niet zo goed
-    - teneergeslagen
-    - sad
-    - ik voel me niet zo goed
-    - teleurgesteld
-    - zielig
+    - mijn collega suggereerde het
+    - iemand anders
+    - mijn collega
+    - mijn leidinggevende
+    - mijn baas
+    - mijn partner
+    - mijn partner heeft dat bedacht
+    - dat was niet mijn idee
+    - ik moet dit doen
+    - dit is verplicht
+    - de onderzoeker vroeg het
+
+- intent: checkup
+  examples: |
+    - ik wil een checkup doen
+    - gewoon een checkup
+    - checkup
+    - check in
+    - controle
+    - een checkup
+    - een controle
+    - ik ben hier voor een checkup
+    - ik wil graag in checken
+    - gewoon een algemene check
+    - een algemene check
+    - nee, een checkup
+    - ja, een checkup
+    - ja, ik wil checken
+    - nee, gewoon voor controle
+
+- intent: have_problems
+  examples: |
+    - ik heb wat problemen
+    - ik loop tegen wat dingen aan
+    - ik heb last van een paar dingetjes
+    - het loopt niet zo lekker
     - het gaat niet zo goed
+    - ik voel me niet zo lekker de laatste tijd
+    - ik denk dat ik misschien wat problemen heb
+    - ik heb een issue
+    - ik heb een probleem
     - het gaat slecht
-    - ik voel me kut
-    - ik voel me rot
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - goed
+#    - geweldig
+#    - ik voel me goed
+#    - ik voel me geweldig
+#    - erg goed
+#    - super goed
+#    - heel goed
+#    - bijna perfect
+#    - heel goed
+#    - het gaat goed
+#    - het gaat best goed
+#    - heel erg goed
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - ik voel me slecht
+#    - slecht
+#    - heel slecht
+#    - super slecht
+#    - niet goed
+#    - niet geweldig
+#    - niet zo goed
+#    - teneergeslagen
+#    - sad
+#    - ik voel me niet zo goed
+#    - teleurgesteld
+#    - zielig
+#    - het gaat niet zo goed
+#    - het gaat slecht
+#    - ik voel me kut
+#    - ik voel me rot
 
 - intent: bot_challenge
   examples: |

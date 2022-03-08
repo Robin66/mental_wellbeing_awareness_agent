@@ -8,28 +8,43 @@ stories:
     - action: utter_greet
     - action: user_info_form
     - action: utter_welcome
-    - action: utter_ask_mood
+    - action: utter_ask_initiative
 
-- story: mood happy
+- story: own initiative
   steps:
-    - action: utter_ask_mood
-    - intent: mood_great
-    - action: utter_happy
+    - action: utter_ask_initiative
+    - intent: refer_to_self
+    - action: utter_ask_type
 
-- story: sad path 1
+- story: other initiative
   steps:
-    - action: utter_ask_mood
-    - intent: mood_unhappy
-    - action: utter_cheer_up
-    - action: utter_did_that_help
+    - action: utter_ask_initiative
+    - intent: refer_to_other
+    - action: utter_ask_problems
+
+- story: other initiative with problems
+  steps:
+    - action: utter_ask_problems
     - intent: affirm
-    - action: utter_happy
+    - action: utter_ask_specific_problems
 
-- story: sad path 2
+- story: other initiative no problems
   steps:
-  - action: utter_ask_mood
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+    - action: utter_ask_problems
+    - intent: deny
+    - action: utter_checkup
+
+- story: other initiative no problems 2
+  steps:
+    - action: utter_ask_problems
+    - intent: checkup
+    - action: utter_checkup
+
+#- story: sad path 2
+#  steps:
+#  - action: utter_ask_mood
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye

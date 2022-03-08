@@ -7,6 +7,11 @@ intents:
   - affirm
   - deny
   - give_name
+  # introduction pieces
+  - refer_to_self
+  - refer_to_other
+  - checkup
+  - have_problems
   # feature discussion
   - mood_great
   - mood_unhappy
@@ -29,45 +34,65 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
+    - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
 
   utter_ask_mood:
-  - text: "Hoe voel je je vandaag?"
+    - text: "Hoe voel je je vandaag?"
 
   utter_cheer_up:
-  - text: "Misschien word je hier blij van:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Misschien word je hier blij van:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Hielp dat?"
+    - text: "Hielp dat?"
 
   utter_happy:
-  - text: "Mooi, ga zo door!"
+    - text: "Mooi, ga zo door!"
 
   utter_goodbye:
-  - text: "Doei"
-  - text: "Tot de volgende keer"
-  - text: "Leuk je te spreken, {name}, tot de volgende keer!"
+    - text: "Doei"
+    - text: "Tot de volgende keer"
+    - text: "Leuk je te spreken, {name}, tot de volgende keer!"
 
   utter_iamabot:
-  - text: "Ik ben een bot, rescheven in Rasa."
+    - text: "Ik ben een bot, rescheven in Rasa."
 
   utter_ask_name:
-  - text: "Hoe mag ik je noemen?"
-  - text: "Hoe zal ik je noemen?"
+    - text: "Hoe mag ik je noemen?"
+    - text: "Hoe zal ik je noemen?"
 
   utter_data_answer:
-  - text: >
-      Alles wat je mij vertelt sla ik tijdelijk op voor mezelf.
-      Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien.
+    - text: >
+        Alles wat je mij vertelt sla ik tijdelijk op voor mezelf.
+        Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien.
 
   utter_name:
-  - text: "Ik heet Robyn."
+    - text: "Ik heet Robyn."
 
   utter_welcome:
-  - text: >
-      Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
-      stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
+    - text: >
+        Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
+        stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
+
+  utter_ask_initiative:
+    - text: >
+        Heb je contact opgenomen omdat iemand anders dat suggereerde of uit jezelf?
+
+  utter_ask_type:
+    - text: >
+        Vanwege iets waar je last van hebt of dat je hebt meegemaakt, of gewoon voor een checkup?
+
+  utter_ask_problems:
+    - text: >
+        Was dat omdat die dacht dat het misschien niet lekker loopt?
+
+  utter_ask_specific_problems:
+    - text: >
+        Is er iets specifieks waar jij of die persoon zich zorgen over maakt?
+
+  utter_checkup:
+    - text: >
+        Goed, laten we dan direct gaan kijken hoe het ervoor staat.
 
 forms:
   user_info_form:
