@@ -1,0 +1,94 @@
+version: "3.0"
+
+nlu:
+  - intent: give_name
+    examples: |
+      - ik heet Ben
+      - mijn naam is Janne
+      - noem mij Thijs
+      - noem mij maar Anne
+      - Patricia
+      - Roel heet ik
+      - je mag me Julius noemen
+      - doe maar Henk
+      - Berend
+      - Bart
+      - Kim
+      - Merel
+      - Rosanne
+      - Stefan
+      - Joris
+      - mijn naam is Sebastiaan
+      - mijn vrienden noemen me Vincent
+
+  - intent: refer_to_self
+    examples: |
+      - uit mezelf
+      - ik heb zelf contact opgenomen
+      - ikzelf
+      - ik
+      - van mij
+      - ik heb dat bedacht
+      - ik heb dat gedaan
+      - dat is mijn idee
+      - ik dacht dat dat wel een goed idee was
+      - ik wilde graag een checkup doen
+      - ik wil graag met je praten
+      - ik wil zelf met je praten
+      - ik wil dit zelf
+
+  - intent: refer_to_other
+    examples: |
+      - mijn collega suggereerde het
+      - iemand anders
+      - mijn collega
+      - mijn leidinggevende
+      - mijn baas
+      - mijn partner
+      - mijn partner heeft dat bedacht
+      - dat was niet mijn idee
+      - ik moet dit doen
+      - dit is verplicht
+      - de onderzoeker vroeg het
+
+  - intent: checkup
+    examples: |
+      - ik wil een checkup doen
+      - gewoon een checkup
+      - checkup
+      - check in
+      - controle
+      - een checkup
+      - een controle
+      - ik ben hier voor een checkup
+      - ik wil graag in checken
+      - gewoon een algemene check
+      - een algemene check
+      - nee, een checkup
+      - ja, een checkup
+      - ja, ik wil checken
+      - nee, gewoon voor controle
+
+  - intent: have_problems
+    examples: |
+      - ik heb wat problemen
+      - ik loop tegen wat dingen aan
+      - ik heb last van een paar dingetjes
+      - het loopt niet zo lekker
+      - het gaat niet zo goed
+      - ik voel me niet zo lekker de laatste tijd
+      - ik denk dat ik misschien wat problemen heb
+      - ik heb een issue
+      - ik heb een probleem
+      - het gaat slecht
+
+  - intent: experience_incident
+    examples: |
+      - voor een incident waar ik bij betrokken was
+      - iets dat ik heb meegemaakt
+      - een melding waar ik naartoe moest
+      - een melding die ik afhandelde
+      - vanwege een incident dat ik heb meegemaakt
+      - een incident
+      - een melding
+      - iets wat ik heb gezien

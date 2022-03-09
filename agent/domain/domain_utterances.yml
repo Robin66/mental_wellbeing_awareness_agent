@@ -1,38 +1,5 @@
 version: "3.0"
 
-intents:
-  # general conversation
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - give_name
-  # introduction pieces
-  - refer_to_self
-  - refer_to_other
-  - checkup
-  - have_problems
-  - experience_incident
-  # feature discussion
-  - mood_great
-  - mood_unhappy
-  # questions
-  - bot_challenge
-  - ask_data
-  - ask_name
-
-entities:
-  - PERSON
-
-slots:
-  name:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_entity
-        intent: give_name
-        entity: PERSON
-
 responses:
   utter_greet:
     - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
@@ -94,12 +61,3 @@ responses:
   utter_checkup:
     - text: >
         Goed, laten we dan direct gaan kijken hoe het ervoor staat.
-
-forms:
-  user_info_form:
-    required_slots:
-      - name
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true

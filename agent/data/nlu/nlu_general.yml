@@ -1,0 +1,87 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hallo
+    - hoi
+    - goeiemorgen
+    - goeiemiddag
+    - goedemorgen
+    - goedemiddag
+    - hoe gaat ie?
+
+- intent: goodbye
+  examples: |
+    - doei
+    - doei doei
+    - dag
+    - tot later
+    - tot ziens
+    - doeg
+    - tot morgen
+    - tot de volgende keer
+    - bedankt
+    - spreek je later
+    - zie je later
+    - fijne dag nog
+    - tot ziens Robyn
+    - dag Robyn
+
+- intent: affirm
+  examples: |
+    - yes
+    - ja
+    - jazeker
+    - inderdaad
+    - natuurlijk
+    - klopt
+    - klinkt goed
+    - dat klinkt goed
+    - ik denk het wel
+    - dat is goed
+    - correct
+    - mee eens
+
+- intent: deny
+  examples: |
+    - no
+    - nee
+    - nope
+    - niet
+    - niet echt
+    - ik denk het niet
+    - echt niet
+    - helemaal niet
+    - zeker niet
+    - dat klopt niet
+    - nooit
+    - daar ben ik het niet mee eens
+
+- intent: bot_challenge
+  examples: |
+    - ben je een bot?
+    - ben je een robot?
+    - ben jij een mens?
+    - praat ik met een robot?
+    - praat ik met een mens?
+
+- intent: ask_data
+  examples: |
+    - wat gebeurt er met mijn gegevens?
+    - sla je dit op?
+    - stuur je dit naar iemand door?
+    - wat doe je met mijn data?
+    - wat gebeurt er dan met alle berichtjes die ik je stuur?
+    - en wat gebeurt er met deze chat?
+    - waar gaan mijn berichten heen?
+
+- intent: ask_name
+  examples: |
+    - hoe heet je?
+    - hoe zal ik jou noemen?
+    - wat is jouw naam?
+    - hoe heet je ook alweer?
+    - vertel je naam nog eens
+    - zeg je naam nog eens
