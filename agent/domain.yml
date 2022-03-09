@@ -12,6 +12,7 @@ intents:
   - refer_to_other
   - checkup
   - have_problems
+  - experience_incident
   # feature discussion
   - mood_great
   - mood_unhappy

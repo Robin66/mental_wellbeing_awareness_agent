@@ -31,13 +31,9 @@ stories:
 - story: other initiative no problems
   steps:
     - action: utter_ask_problems
-    - intent: deny
-    - action: utter_checkup
-
-- story: other initiative no problems 2
-  steps:
-    - action: utter_ask_problems
-    - intent: checkup
+    - or:
+      - intent: deny
+      - intent: checkup
     - action: utter_checkup
 
 #- story: sad path 2

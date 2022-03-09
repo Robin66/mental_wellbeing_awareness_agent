@@ -140,40 +140,16 @@ nlu:
     - ik heb een probleem
     - het gaat slecht
 
-#- intent: mood_great
-#  examples: |
-#    - perfect
-#    - goed
-#    - geweldig
-#    - ik voel me goed
-#    - ik voel me geweldig
-#    - erg goed
-#    - super goed
-#    - heel goed
-#    - bijna perfect
-#    - heel goed
-#    - het gaat goed
-#    - het gaat best goed
-#    - heel erg goed
-#
-#- intent: mood_unhappy
-#  examples: |
-#    - ik voel me slecht
-#    - slecht
-#    - heel slecht
-#    - super slecht
-#    - niet goed
-#    - niet geweldig
-#    - niet zo goed
-#    - teneergeslagen
-#    - sad
-#    - ik voel me niet zo goed
-#    - teleurgesteld
-#    - zielig
-#    - het gaat niet zo goed
-#    - het gaat slecht
-#    - ik voel me kut
-#    - ik voel me rot
+- intent: experience_incident
+  examples: |
+    - voor een incident waar ik bij betrokken was
+    - iets dat ik heb meegemaakt
+    - een melding waar ik naartoe moest
+    - een melding die ik afhandelde
+    - vanwege een incident dat ik heb meegemaakt
+    - een incident
+    - een melding
+    - iets wat ik heb gezien
 
 - intent: bot_challenge
   examples: |
