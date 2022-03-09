@@ -14,8 +14,6 @@ intents:
   - have_problems
   - experience_incident
   # feature discussion
-  - mood_great
-  - mood_unhappy
   # questions
   - bot_challenge
   - ask_data

@@ -1,21 +1,11 @@
 version: "3.0"
 
 responses:
+
+# General
+
   utter_greet:
     - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
-
-  utter_ask_mood:
-    - text: "Hoe voel je je vandaag?"
-
-  utter_cheer_up:
-    - text: "Misschien word je hier blij van:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-    - text: "Hielp dat?"
-
-  utter_happy:
-    - text: "Mooi, ga zo door!"
 
   utter_goodbye:
     - text: "Doei"
@@ -37,6 +27,8 @@ responses:
   utter_name:
     - text: "Ik heet Robyn."
 
+# Introduction
+
   utter_welcome:
     - text: >
         Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
@@ -50,13 +42,22 @@ responses:
     - text: >
         Vanwege iets waar je last van hebt of dat je hebt meegemaakt, of gewoon voor een checkup?
 
-  utter_ask_problems:
+  utter_ask_problems_other:
     - text: >
         Was dat omdat die dacht dat het misschien niet lekker loopt?
 
-  utter_ask_specific_problems:
+  utter_ask_specific_problems_other:
     - text: >
         Is er iets specifieks waar jij of die persoon zich zorgen over maakt?
+
+  utter_ask_problems_self:
+    - text: >
+        Kan je me vertellen waar je last van hebt?
+
+  utter_ask_problems_incident:
+    - text: >
+        Sommige meldingen en incidenten kunnen een grote impact op mensen hebben.
+        Heb je ergens specifiek last van?
 
   utter_checkup:
     - text: >

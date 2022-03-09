@@ -16,31 +16,40 @@ stories:
     - intent: refer_to_self
     - action: utter_ask_type
 
+- story: own initiative checkup
+  steps:
+    - action: utter_ask_type
+    - intent: checkup
+    - action: utter_checkup
+
+- story: own initiative problems
+  steps:
+    - action: utter_ask_type
+    - intent: have_problems
+    - action: utter_ask_problems_self
+
+- story: own initiative incident
+  steps:
+    - action: utter_ask_type
+    - intent: experience_incident
+    - action: utter_ask_problems_incident
+
 - story: other initiative
   steps:
     - action: utter_ask_initiative
     - intent: refer_to_other
-    - action: utter_ask_problems
+    - action: utter_ask_problems_other
 
 - story: other initiative with problems
   steps:
-    - action: utter_ask_problems
+    - action: utter_ask_problems_other
     - intent: affirm
-    - action: utter_ask_specific_problems
+    - action: utter_ask_specific_problems_other
 
 - story: other initiative no problems
   steps:
-    - action: utter_ask_problems
+    - action: utter_ask_problems_other
     - or:
       - intent: deny
       - intent: checkup
     - action: utter_checkup
-
-#- story: sad path 2
-#  steps:
-#  - action: utter_ask_mood
-#  - intent: mood_unhappy
-#  - action: utter_cheer_up
-#  - action: utter_did_that_help
-#  - intent: deny
-#  - action: utter_goodbye
