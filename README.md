@@ -15,4 +15,5 @@ This project uses the following libraries and datasets:
 
 ## Building the bot
 
+First validate the yml documents using `rasa data validate --domain domain`.
 To train the model, run `rasa train --domain domain`.

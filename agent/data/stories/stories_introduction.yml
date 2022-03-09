@@ -1,7 +1,6 @@
 version: "3.0"
 
 stories:
-
 - story: introductions
   steps:
     - intent: greet
@@ -53,3 +52,21 @@ stories:
       - intent: deny
       - intent: checkup
     - action: utter_checkup
+
+- story: situation other indicates problems, no specifics
+  steps:
+    - action: utter_ask_specific_problems_other
+    - intent: deny
+    - action: utter_checkup_after_unspecified_problems
+
+- story: situation incident indicates problems, no specifics
+  steps:
+    - action: utter_ask_problems_incident
+    - intent: deny
+    - action: utter_checkup_after_unspecified_problems
+
+- story: situation self indicates problems, no specifics
+  steps:
+    - action: utter_ask_problems_self
+    - intent: deny
+    - action: utter_checkup_after_unspecified_problems

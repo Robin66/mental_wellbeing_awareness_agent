@@ -1,0 +1,54 @@
+version: "3.0"
+
+stories:
+- story: situation other initiative, no problems
+  steps:
+  - user: |
+      Hoi
+    intent: greet
+  - action: utter_greet
+  - action: user_info_form
+  - active_loop: user_info_form
+  - user: |
+      [Suzanne](PERSON)
+    intent: give_name
+  - action: user_info_form
+  - active_loop: null
+  - action: utter_welcome
+  - action: utter_ask_initiative
+  - user: |
+      Mijn collega suggereerde het
+    intent: refer_to_other
+  - action: utter_ask_problems_other
+  - user: |
+      Nee, gewoon een checkup
+    intent: checkup
+  - action: utter_checkup
+
+- story: situation other initiative, problems, no specifics
+  steps:
+  - user: |
+      Gooiemorgen
+    intent: greet
+  - action: utter_greet
+  - action: user_info_form
+  - active_loop: user_info_form
+  - user: |
+      [Sabine](PERSON)
+    intent: give_name
+  - action: user_info_form
+  - active_loop: null
+  - action: utter_welcome
+  - action: utter_ask_initiative
+  - user: |
+      Mijn partner vond het een goed idee
+    intent: refer_to_other
+  - action: utter_ask_problems_other
+  - user: |
+      ja
+    intent: affirm
+  - action: utter_ask_specific_problems_other
+  - user: |
+      nee
+    intent: deny
+  - action: utter_checkup_after_unspecified_problems

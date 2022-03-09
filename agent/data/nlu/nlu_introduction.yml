@@ -50,6 +50,7 @@ nlu:
       - ik moet dit doen
       - dit is verplicht
       - de onderzoeker vroeg het
+      - mijn partner vond het een goed idee
 
   - intent: checkup
     examples: |

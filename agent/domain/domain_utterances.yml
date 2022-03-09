@@ -62,3 +62,7 @@ responses:
   utter_checkup:
     - text: >
         Goed, laten we dan direct gaan kijken hoe het ervoor staat.
+
+  utter_checkup_after_unspecified_problems:
+    - text: >
+        Oké, laten we dan gewoon een algemene check doen.
