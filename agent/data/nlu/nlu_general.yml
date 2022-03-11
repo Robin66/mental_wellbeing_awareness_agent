@@ -11,6 +11,11 @@ nlu:
     - goedemorgen
     - goedemiddag
     - hoe gaat ie?
+    - hi
+    - hee
+    - hey hey
+    - hey hoi
+    - heyo
 
 - intent: goodbye
   examples: |
@@ -43,6 +48,10 @@ nlu:
     - dat is goed
     - correct
     - mee eens
+    - sowieso wel
+    - echt wel
+    - helemaal
+    - zeker
 
 - intent: deny
   examples: |
@@ -58,6 +67,7 @@ nlu:
     - dat klopt niet
     - nooit
     - daar ben ik het niet mee eens
+    - sowieso niet
 
 - intent: bot_challenge
   examples: |
