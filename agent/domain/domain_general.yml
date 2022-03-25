@@ -14,10 +14,19 @@ intents:
   - have_problems
   - experience_incident
   # feature discussion
+  - tell_symptom_sleeping_problems
+  - tell_symptom_focus_problems
+  - tell_symptom_motivation_problems
+  - tell_symptom_anxiety_problems
+  - tell_symptom_annoyance_problems
   # questions
   - bot_challenge
   - ask_data
   - ask_name
+
+actions:
+  - action_collect_symptoms
+  - action_determine_severity
 
 entities:
   - PERSON
@@ -30,6 +39,23 @@ slots:
       - type: from_entity
         intent: give_name
         entity: PERSON
+  symptoms:
+    type: any
+    initial_value: [ 0,0,0,0,0,0,0,0,0,0,0,0,0 ]
+    mappings:
+      - type: custom
+        action: action_collect_symptoms
+  severity:
+    type: categorical
+    influence_conversation: true
+    values:
+      - green
+      - yellow
+      - orange
+      - red
+    mappings:
+      - type: custom
+        action: action_determine_severity
 
 forms:
   user_info_form:

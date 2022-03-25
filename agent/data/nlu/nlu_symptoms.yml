@@ -1,0 +1,56 @@
+version: "3.0"
+
+nlu:
+# This is not a very clean way of doing this, it might be replaced by one big intent with a slot for
+# the symptom mentioned, sometime in the future.
+- intent: tell_symptom_sleeping_problems
+  examples: |
+    - ik heb last van slapeloosheid
+    - ik kom moeilijk in slaap
+    - in slaap vallen lukt niet
+    - ik krijg niet genoeg nachtrust
+    - ik slaap te weinig
+    - ik heb nachtmerries
+    - ik heb nare dromen
+    - ik heb een tekort aan energie door te weinig slaap
+    - ik lig 's nachts te piekeren
+    - ik pieker veel en kan dan niet slapen
+
+- intent: tell_symptom_focus_problems
+  examples: |
+    - ik kan me niet meer goed focussen
+    - ik heb problemen met mijn focus
+    - mijn focus is weg tijdens het werk
+    - ik ben snel afgeleid
+    - ik heb moeite met concentreren
+    - slecht concentreren
+    - ik heb meer last van afleiding dan vroeger
+    - ik ben sneller afgeleid dan eerst
+
+- intent: tell_symptom_motivation_problems
+  examples: |
+    - ik heb minder motivatie
+    - mijn drive is weg
+    - mijn motivatie is verdwenen
+    - ik heb minder zin in werk
+    - ik heb geen zin meer in shifts
+    - ik zie het nut van werk niet meer
+    - ik heb geen motivatie meer voor mijn hobbies
+
+- intent: tell_symptom_anxiety_problems
+  examples: |
+    - ik voel me nerveus
+    - ik ben vaker nerveus
+    - ik ben meer nerveus
+    - ik maak me veel zorgen
+    - ik ben bezorgd
+
+- intent: tell_symptom_annoyance_problems
+  examples: |
+    - ik ben sneller geïrriteerd
+    - ik heb een korter lontje de laatste tijd
+    - ik voel me sneller geergerd
+    - ik erger me snel aan anderen
+    - mensen zijn irritanter
+    - ik heb een kort lontje
+    - mijn humeur is onvoorspelbaar
