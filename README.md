@@ -12,3 +12,8 @@ This project uses the following libraries and datasets:
 - Rasa version 3.0.8
 - spacy
 - spacy dataset nl_core_news_lg
+
+## Building the bot
+
+First validate the yml documents using `rasa data validate --domain domain`.
+To train the model, run `rasa train --domain domain`.

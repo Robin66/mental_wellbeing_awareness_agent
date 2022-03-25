@@ -17,7 +17,7 @@ rules:
     - action: user_info_form
     - active_loop: null
     - action: utter_welcome
-    - action: utter_ask_mood
+    - action: utter_ask_initiative
 
 # General rules
 

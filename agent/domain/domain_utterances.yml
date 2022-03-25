@@ -1,0 +1,68 @@
+version: "3.0"
+
+responses:
+
+# General
+
+  utter_greet:
+    - text: "Hoi, ik ben Robyn. Ik ben een chatbot om te helpen te bekijken hoe het mentaal met je gaat."
+
+  utter_goodbye:
+    - text: "Doei"
+    - text: "Tot de volgende keer"
+    - text: "Leuk je te spreken, {name}, tot de volgende keer!"
+
+  utter_iamabot:
+    - text: "Ik ben een bot, rescheven in Rasa."
+
+  utter_ask_name:
+    - text: "Hoe mag ik je noemen?"
+    - text: "Hoe zal ik je noemen?"
+
+  utter_data_answer:
+    - text: >
+        Alles wat je mij vertelt sla ik tijdelijk op voor mezelf.
+        Na ons gesprek wordt alles direct verwijderd en niemand anders kan het inzien.
+
+  utter_name:
+    - text: "Ik heet Robyn."
+
+# Introduction
+
+  utter_welcome:
+    - text: >
+        Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
+        stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
+
+  utter_ask_initiative:
+    - text: >
+        Heb je contact opgenomen omdat iemand anders dat suggereerde of uit jezelf?
+
+  utter_ask_type:
+    - text: >
+        Vanwege iets waar je last van hebt of dat je hebt meegemaakt, of gewoon voor een checkup?
+
+  utter_ask_problems_other:
+    - text: >
+        Was dat omdat die dacht dat het misschien niet lekker loopt?
+
+  utter_ask_specific_problems_other:
+    - text: >
+        Is er iets specifieks waar jij of die persoon zich zorgen over maakt?
+
+  utter_ask_problems_self:
+    - text: >
+        Kan je me vertellen waar je last van hebt?
+
+  utter_ask_problems_incident:
+    - text: >
+        Sommige meldingen en incidenten kunnen een grote impact op mensen hebben.
+        Heb je ergens specifiek last van?
+
+  utter_checkup:
+    - text: >
+        Goed, laten we dan direct gaan kijken hoe het ervoor staat.
+
+  utter_checkup_after_unspecified_problems:
+    - text: >
+        Oké, laten we dan gewoon een algemene check doen.
