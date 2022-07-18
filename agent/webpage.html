@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Robyn</title>
+</head>
+
+<body>
+<div class="col-sm-12 chat-container" id="webchat">
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const userid = urlParams.get('userid');
+
+        !(function () {
+          let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+          (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+            // Replace 1.x.x with the version that you want
+            (e.async = !0),
+            (e.onload = () => {
+              window.WebChat.default(
+                {
+                    customData: { language: "nl" , "userid": userid},
+                    selector: "#webchat",
+                    socketUrl: "http://localhost:5005",
+                    socketPath: "/socket.io/",
+                    fullScreenMode: true,
+                    embedded: true,
+                    inputTextFieldHint: "Zeg hallo!",
+                    title: "Chatbot Robyn",
+                    isChatOpen: true,
+                    mainColor: "#EAE164",
+                    userBackgroundColor: "#164471",
+                    userTextColor: "#FFFCF6",
+                    // profileAvatar: "http://ii.tudelft.nl/burnout-support/img/icon_bot_1.png",
+                    tooltipDelay: 100,
+                    container: document.querySelector(".chat-container"),
+                    initPayload: "/greet",
+                    hideWhenNotConnected: false,
+                    storage: "session",
+                    customMessageDelay: (message) => {
+                        let delay = message.length * 45;
+                        if (delay > 5 * 1000) delay = 5 * 1000;
+                        if (delay < 800) delay = 800;
+                        return delay;
+                     }
+
+                },
+                null
+              );
+            }),
+            t.insertBefore(e, t.firstChild);
+        })();
+    </script>
+</div>
+</body>
+
+</html>
