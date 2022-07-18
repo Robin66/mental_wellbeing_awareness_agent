@@ -9,7 +9,7 @@ This project is the master thesis work of Robin Cromjongh. Once published, the r
 
 This project uses the following libraries and datasets:
 
-- Rasa version 3.0.9 (instructions [here](https://rasa.com/docs/rasa/installation/))
+- Rasa version 2.8 (instructions [here](https://rasa.com/docs/rasa/2.x/installation))
 - spacy (instructions [here](https://rasa.com/docs/rasa/installation/#dependencies-for-spacy))
 - spacy dataset nl_core_news_lg
 

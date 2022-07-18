@@ -4,20 +4,22 @@ rules:
 
 # Forms
 
-#- rule: activate name form
-#  steps:
-#    - action: utter_greet
-#    - action: user_info_form
-#    - active_loop: user_info_form
-#
-#- rule: finish name form
-#  condition:
-#  - active_loop: user_info_form   # this form must be active
-#  steps:
-#    - action: user_info_form
-#    - active_loop: null
-#    - action: utter_welcome
-#    - action: utter_ask_initiative
+- rule: activate name form
+  steps:
+    - action: utter_greet
+    - action: user_info_form
+    - active_loop: user_info_form
+
+- rule: finish name form
+  condition:
+  - active_loop: user_info_form   # this form must be active
+  steps:
+    - action: user_info_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: utter_welcome
+    - action: utter_ask_initiative
 
 # General rules
 

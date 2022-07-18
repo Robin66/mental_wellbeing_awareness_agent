@@ -31,10 +31,10 @@ actions:
 entities:
   - PERSON
 
-#slots:
-#  name:
-#    type: text
-#    influence_conversation: false
+slots:
+  name:
+    type: text
+    influence_conversation: false
 #    mappings:
 #      - type: from_entity
 #        intent: give_name
@@ -57,10 +57,13 @@ entities:
 #      - type: custom
 #        action: action_determine_severity
 
-#forms:
-#  user_info_form:
-#    required_slots:
-#      - name
+forms:
+  user_info_form:
+    required_slots:
+      name:
+        - type: from_entity
+          intent: give_name
+          entity: PERSON
 
 session_config:
   session_expiration_time: 60
