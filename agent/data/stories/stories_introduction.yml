@@ -1,11 +1,11 @@
-version: "3.0"
+version: "2.0"
 
 stories:
 - story: introductions
   steps:
     - intent: greet
     - action: utter_greet
-    - action: user_info_form
+#    - action: user_info_form
     - action: utter_welcome
     - action: utter_ask_initiative
 

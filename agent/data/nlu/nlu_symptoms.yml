@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 nlu:
 # This is not a very clean way of doing this, it might be replaced by one big intent with a slot for

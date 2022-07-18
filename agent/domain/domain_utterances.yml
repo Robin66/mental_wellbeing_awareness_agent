@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 responses:
 
@@ -10,7 +10,7 @@ responses:
   utter_goodbye:
     - text: "Doei"
     - text: "Tot de volgende keer"
-    - text: "Leuk je te spreken, {name}, tot de volgende keer!"
+#    - text: "Leuk je te spreken, {name}, tot de volgende keer!"
 
   utter_iamabot:
     - text: "Ik ben een bot, rescheven in Rasa."
@@ -31,8 +31,9 @@ responses:
 
   utter_welcome:
     - text: >
-        Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
-        stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
+        hallo
+#        Hoi {name}, leuk je te ontmoeten. Alles wat je in ons gesprek aan mij vertelt,
+#        stuur ik alleen door naar iemand als jij daar op dat moment toestemming voor geeft.
 
   utter_ask_initiative:
     - text: >
