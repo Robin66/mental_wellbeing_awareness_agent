@@ -21,3 +21,4 @@ To train the model, run `rasa train --domain domain`.
 You can run the test stories by `rasa test`.
 
 To have conversations locally, open one terminal and execute `rasa run actions`, in another execute `rasa shell`.
+Or to run Rasa Webchat `rasa run -m models --enable-api --cors "*" --debug` and open the webpage on localhost in a browser.
