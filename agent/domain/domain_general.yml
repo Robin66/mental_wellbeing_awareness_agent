@@ -39,20 +39,20 @@ slots:
 #      - type: from_entity
 #        intent: give_name
 #        entity: PERSON
-#  symptoms:
-#    type: any
-#    initial_value: [ 0,0,0,0,0,0,0,0,0,0,0,0,0 ]
+  symptoms:
+    type: any
+    initial_value: [ 0,0,0,0,0,0,0,0,0,0,0,0,0 ]
 #    mappings:
 #      - type: custom
 #        action: action_collect_symptoms
-#  severity:
-#    type: categorical
-#    influence_conversation: true
-#    values:
-#      - green
-#      - yellow
-#      - orange
-#      - red
+  severity:
+    type: categorical
+    influence_conversation: true
+    values:
+      - green
+      - yellow
+      - orange
+      - red
 #    mappings:
 #      - type: custom
 #        action: action_determine_severity
