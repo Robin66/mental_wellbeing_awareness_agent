@@ -70,3 +70,39 @@ stories:
     - action: utter_ask_problems_self
     - intent: deny
     - action: utter_checkup_after_unspecified_problems
+
+- story: situation other indicates problems, with specifics
+  steps:
+    - action: utter_ask_specific_problems_other
+    - or:
+        - intent: tell_symptom_sleeping_problems
+        - intent: tell_symptom_focus_problems
+        - intent: tell_symptom_motivation_problems
+        - intent: tell_symptom_anxiety_problems
+        - intent: tell_symptom_annoyance_problems
+    - action: action_collect_symptoms
+    - action: utter_checkup_after_specified_problems
+
+- story: situation incident indicates problems, with specifics
+  steps:
+    - action: utter_ask_problems_incident
+    - or:
+        - intent: tell_symptom_sleeping_problems
+        - intent: tell_symptom_focus_problems
+        - intent: tell_symptom_motivation_problems
+        - intent: tell_symptom_anxiety_problems
+        - intent: tell_symptom_annoyance_problems
+    - action: action_collect_symptoms
+    - action: utter_checkup_after_specified_problems
+
+- story: situation self indicates problems, with specifics
+  steps:
+    - action: utter_ask_problems_self
+    - or:
+        - intent: tell_symptom_sleeping_problems
+        - intent: tell_symptom_focus_problems
+        - intent: tell_symptom_motivation_problems
+        - intent: tell_symptom_anxiety_problems
+        - intent: tell_symptom_annoyance_problems
+    - action: action_collect_symptoms
+    - action: utter_checkup_after_specified_problems
