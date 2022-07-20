@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 stories:
 - story: situation other initiative, no problems
@@ -114,7 +114,7 @@ stories:
   - action: user_info_form
   - active_loop: user_info_form
   - user: |
-      [Bart](PERSON)
+      [Sanne](PERSON)
     intent: give_name
   - action: user_info_form
   - active_loop: null
