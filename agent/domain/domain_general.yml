@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 intents:
   # general conversation
@@ -35,16 +35,16 @@ slots:
   name:
     type: text
     influence_conversation: false
-    mappings:
-      - type: from_entity
-        intent: give_name
-        entity: PERSON
+#    mappings:
+#      - type: from_entity
+#        intent: give_name
+#        entity: PERSON
   symptoms:
     type: any
     initial_value: [ 0,0,0,0,0,0,0,0,0,0,0,0,0 ]
-    mappings:
-      - type: custom
-        action: action_collect_symptoms
+#    mappings:
+#      - type: custom
+#        action: action_collect_symptoms
   severity:
     type: categorical
     influence_conversation: true
@@ -53,14 +53,17 @@ slots:
       - yellow
       - orange
       - red
-    mappings:
-      - type: custom
-        action: action_determine_severity
+#    mappings:
+#      - type: custom
+#        action: action_determine_severity
 
 forms:
   user_info_form:
     required_slots:
-      - name
+      name:
+        - type: from_entity
+          intent: give_name
+          entity: PERSON
 
 session_config:
   session_expiration_time: 60

@@ -9,7 +9,7 @@ This project is the master thesis work of Robin Cromjongh. Once published, the r
 
 This project uses the following libraries and datasets:
 
-- Rasa version 3.0.9 (instructions [here](https://rasa.com/docs/rasa/installation/))
+- Rasa version 2.8 (instructions [here](https://rasa.com/docs/rasa/2.x/installation))
 - spacy (instructions [here](https://rasa.com/docs/rasa/installation/#dependencies-for-spacy))
 - spacy dataset nl_core_news_lg
 
@@ -19,5 +19,8 @@ From the agent folder, first validate the yml documents using `rasa data validat
 To train the model, run `rasa train --domain domain`.
 
 You can run the test stories by `rasa test`.
+If the output indicates errors but does not show where it goes wrong,
+you can run `rasa test --fail-on-prediction-errors` to find that out.
 
 To have conversations locally, open one terminal and execute `rasa run actions`, in another execute `rasa shell`.
+Or to run Rasa Webchat `rasa run -m models --enable-api --cors "*" --debug` and open the webpage on localhost in a browser.
