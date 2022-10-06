@@ -1,6 +1,6 @@
-# Mental health awareness chatbot
+# Mental well-being awareness chatbot
 
-This conversational agent is build to support police officers to keep an eye on their mental health.
+This conversational agent is build to support police officers to keep an eye on their mental well-being.
 The agent uses the Stress First Aid method to walk users through a mental health checkup.
 
 This project is the master thesis work of Robin Cromjongh. Once published, the resulting thesis report will be linked here.
